@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatima Zahra Al Hajji</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="landing-text">
-            <h1>Welcome to My World</h1>
+            <h1 id="name"></h1>
             <p>Exploring the intersection of AI, coding, and creativity.</p>
             <a href="#about" class="button">Learn More</a>
         </div>
@@ -51,4 +52,22 @@
     </section>
 
 </body>
+
+<script>
+    // Typing effect for the name
+    let nameElement = document.getElementById('name');
+    let nameText = 'Fatima Zahra Al Hajji';
+    let index = 0;
+
+    function typeName() {
+        if (index < nameText.length) {
+            nameElement.innerHTML += nameText.charAt(index);
+            index++;
+            setTimeout(typeName, 150);
+        }
+    }
+
+    window.onload = typeName;
+</script>
+
 </html>
