@@ -19,7 +19,7 @@ body {
 /* Hero Section (Top of the Page) */
 .hero {
     display: flex;
-    justify-content: space-between; /* Space between text and image */
+    justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #0a001f;
@@ -33,22 +33,15 @@ body {
     background-size: cover;
 }
 
-.landing-text {
-    text-align: left;
-    flex: 1; /* Occupy remaining space */
-}
-
-/* Cat image styles */
-.cat-image {
-    max-width: 200px; /* Adjust size */
-    max-height: 200px;
-}
-
+/* Cat Image Styles */
 .cat-image img {
-    width: 100%; /* Ensure image fits within its container */
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    position: absolute;
+    right: 20px; /* Position it on the right */
+    top: 20px; /* Adjust vertical position */
+    z-index: 2; /* Keep it above other content */
 }
 
 /* Typing effect for the name */
@@ -157,7 +150,7 @@ p, ul, li {
         padding: 10px 20px;
     }
 
-    .cat-image {
-        max-width: 150px; /* Resize for mobile */
+    .cat-image img {
+        width: 200px; /* Adjust image size for smaller screens */
     }
 }
