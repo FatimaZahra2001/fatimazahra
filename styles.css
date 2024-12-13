@@ -151,6 +151,6 @@ p, ul, li {
     }
 
     .cat-image img {
-        width: 200px; /* Adjust image size for smaller screens */
+        width: 100px; /* Adjust image size for smaller screens */
     }
 }
