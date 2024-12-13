@@ -64,11 +64,13 @@ button:hover, .button:hover {
 
 /* About Me Section */
 .about {
-    padding: 30px 40px;
+    padding: 30px;
     background-color: #2b0044; /* Slightly lighter dark purple */
     color: #d1a2ff; /* Light lavender */
-    margin: 0 auto;
-    max-width: 800px; /* Limit width to make it more compact */
+    margin: 20px auto;
+    max-width: 800px; /* Limit width */
+    border: 2px solid #7c4dff; /* Add border to sections */
+    border-radius: 10px; /* Rounded corners for sections */
 }
 
 .about h2 {
@@ -82,11 +84,13 @@ button:hover, .button:hover {
 
 /* Interests Section */
 .interests {
-    padding: 30px 40px;
+    padding: 30px;
     background-color: #3e004d; /* Dark purple with slight contrast */
     color: #d1a2ff; /* Light lavender */
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 800px; /* Limit width */
+    border: 2px solid #7c4dff; /* Add border to sections */
+    border-radius: 10px; /* Rounded corners for sections */
 }
 
 .interests h2 {
@@ -106,11 +110,13 @@ button:hover, .button:hover {
 
 /* Projects Section */
 .projects {
-    padding: 30px 40px;
+    padding: 30px;
     background-color: #2b0044; /* Slightly lighter dark purple */
     color: #d1a2ff; /* Light lavender */
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 800px; /* Limit width */
+    border: 2px solid #7c4dff; /* Add border to sections */
+    border-radius: 10px; /* Rounded corners for sections */
 }
 
 .projects h2 {
