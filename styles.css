@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3fc; /* Pastel purple */
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #5b3d85; /* Pastel dark purple */
+}
+
+header {
+    background-color: #c6b7e2; /* Pastel lavender */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5b3d85;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#about {
+    background-color: #e3dff3; /* Lighter pastel lavender */
+}
+
+#projects, #skills, #contact {
+    background-color: #f4edf7; /* Slightly darker lavender */
+}
+
+.project {
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #5b3d85;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
