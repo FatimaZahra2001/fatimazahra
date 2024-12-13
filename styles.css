@@ -19,7 +19,7 @@ body {
 /* Hero Section (Top of the Page) */
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Space between text and image */
     align-items: center;
     height: 100vh;
     background-color: #0a001f;
@@ -28,19 +28,19 @@ body {
     padding: 20px;
     color: #d1a2ff;
     overflow: hidden;
-    border: none; /* No border for the hero section */
     background: url('https://www.transparenttextures.com/patterns/stardust.png'), #0a001f;
     background-size: cover;
 }
 
 /* Cat Image Styles */
 .cat-image img {
-    width: 300px; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn't overflow */
+    width: 500px; /* Make the image big */
+    height: auto;
+    max-width: 100%;
     position: absolute;
     right: 20px; /* Position it on the right */
-    top: 20px; /* Adjust vertical position */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Center it properly */
     z-index: 2; /* Keep it above other content */
 }
 
