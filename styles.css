@@ -8,6 +8,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Celestial Starry Night Background */
+body {
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #0a001f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 /* Hero Section (Top of the Page) */
 .hero {
     display: flex;
@@ -21,59 +29,11 @@ body {
     color: #d1a2ff;
     overflow: hidden;
     border: none; /* No border for the hero section */
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #0a001f;
+    background-size: cover;
 }
 
-.landing-text {
-    z-index: 2;
-    font-size: 1.5rem;
-    max-width: 90%;
-}
-
-button, .button {
-    background: linear-gradient(135deg, #7c4dff, #d1a2ff);
-    color: #fff;
-    font-size: 1rem;
-    padding: 12px 24px;
-    border-radius: 5px;
-    border: none;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(124, 77, 255, 0.6);
-}
-
-button:hover, .button:hover {
-    background: linear-gradient(135deg, #d1a2ff, #7c4dff);
-    box-shadow: 0 6px 20px rgba(124, 77, 255, 0.8), 0 0 10px #d1a2ff;
-    transform: translateY(-2px);
-}
-
-/* Add a celestial sparkle effect */
-button::before, .button::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 70%);
-    animation: sparkle 6s infinite linear;
-    opacity: 0.6;
-    pointer-events: none;
-    filter: blur(3px);
-}
-
-@keyframes sparkle {
-    from {
-        transform: translate(0, 0);
-    }
-    to {
-        transform: translate(-100%, -100%);
-    }
-}
-
-/* Typing Effect Animation */
+/* Typing effect for the name */
 #name {
     font-size: 2rem;
     font-weight: 500;
@@ -154,19 +114,6 @@ p, ul, li {
 
 .card p {
     font-size: 1rem;
-}
-
-/* Stars Effect */
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
-    opacity: 0.2;
-    pointer-events: none;
 }
 
 /* Mobile Responsiveness */
