@@ -1,101 +1,45 @@
-:root {
-    --primary-color: #2b1a42; /* Dark Purple */
-    --secondary-color: #5e3c83; /* Medium Purple */
-    --accent-color: #f7a7d3; /* Light Pink */
-    --text-color: #f2f2f2; /* Light Gray for text */
-    --code-color: #a7b6d9; /* Light blue code text */
-    --cloud-color: rgba(255, 255, 255, 0.2); /* Soft white clouds */
-}
-
+/* Basic Styles */
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: var(--primary-color);
-    color: var(--text-color);
-    overflow-x: hidden;
-    height: 100vh;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-#name {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 2rem;
-    color: var(--accent-color);
-    letter-spacing: 2px;
-    animation: codeTyping 3s steps(30) 1s forwards;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     padding: 0;
+    background: linear-gradient(to bottom, #8c74d8, #d3b7e0); /* Purple to pink gradient */
+    color: white;
 }
 
-nav ul li {
-    font-weight: 600;
+h2, h3, p {
+    text-align: center;
+    color: #fff;
 }
 
-nav ul li a {
+a {
     text-decoration: none;
-    color: var(--accent-color);
-    font-size: 1.2rem;
+    color: white;
     padding: 10px 20px;
-    border: 2px solid var(--accent-color);
-    border-radius: 30px;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #9c6ad1;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+a:hover {
+    background-color: #c18fe0;
 }
 
+/* Hero Section */
 .hero {
-    position: relative;
-    background: var(--primary-color);
-    color: var(--text-color);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-image: 'fatimazahra.github.io/assets/background.jpeg';
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.landing-text {
+    z-index: 2;
     text-align: center;
-    overflow: hidden;
-}
-
-.landing-text h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    color: var(--accent-color);
-    margin-bottom: 20px;
-}
-
-.landing-text p {
-    font-size: 1.5rem;
-    color: var(--text-color);
-    margin-top: 0;
-}
-
-.landing-text .button {
-    display: inline-block;
-    background: var(--accent-color);
-    color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.landing-text .button:hover {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    transform: translateY(-3px);
 }
 
 .clouds {
@@ -104,105 +48,92 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/clouds.png');
-    background-size: cover;
-    opacity: 0.1;
-    animation: moveClouds 60s linear infinite;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
 }
 
-.section {
-    padding: 80px 20px;
-    text-align: center;
-    color: var(--text-color);
+.cloud-img {
+    width: 200px;
+    margin-top: 20px;
+    animation: float 5s infinite ease-in-out;
 }
 
-.section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: var(--accent-color);
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 
-.card-container {
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 20px;
+}
+
+.cards {
     display: flex;
     justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .card {
+    background-color: #ffffff90;
+    padding: 20px;
+    border-radius: 10px;
     width: 300px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border-radius: 10px;
 }
 
-.card h3 {
+/* Social Media Widget */
+.social-media-widget {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+}
+
+.social-media-widget a {
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-media-widget a:hover {
+    transform: scale(1.2);
+}
+
+.social-media-widget img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+/* Clock Widget */
+.clock-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 10px;
     font-size: 1.5rem;
-    padding: 15px;
-    color: var(--secondary-color);
+    color: #333;
 }
 
-.card p {
-    padding: 0 15px 20px;
-    color: var(--text-color);
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--secondary-color);
-    color: var(--text-color);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.8rem;
-}
-
-@keyframes codeTyping {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes moveClouds {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .landing-text h2 {
-        font-size: 2rem;
-    }
-
-    .landing-text p {
-        font-size: 1.2rem;
-    }
-
-    #name {
-        font-size: 1.5rem;
-    }
-
-    .card {
-        width: 100%;
-    }
+/* Weather Widget */
+.weather-widget {
+    margin: 20px;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
 }
