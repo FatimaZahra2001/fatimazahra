@@ -19,7 +19,7 @@ body {
 /* Hero Section (Top of the Page) */
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Space between text and image */
     align-items: center;
     height: 100vh;
     background-color: #0a001f;
@@ -31,6 +31,24 @@ body {
     border: none; /* No border for the hero section */
     background: url('https://www.transparenttextures.com/patterns/stardust.png'), #0a001f;
     background-size: cover;
+}
+
+.landing-text {
+    text-align: left;
+    flex: 1; /* Occupy remaining space */
+}
+
+/* Cat image styles */
+.cat-image {
+    max-width: 200px; /* Adjust size */
+    max-height: 200px;
+}
+
+.cat-image img {
+    width: 100%; /* Ensure image fits within its container */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Typing effect for the name */
@@ -137,5 +155,9 @@ p, ul, li {
     button, .button {
         font-size: 0.9rem;
         padding: 10px 20px;
+    }
+
+    .cat-image {
+        max-width: 150px; /* Resize for mobile */
     }
 }
