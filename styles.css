@@ -106,7 +106,7 @@ nav ul li a:hover {
     border-radius: 15px;
     box-shadow: var(--light-shadow);
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card img {
@@ -128,6 +128,7 @@ nav ul li a:hover {
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Slight shadow effect on hover */
 }
 
 footer {
@@ -136,4 +137,24 @@ footer {
     background: var(--secondary-color);
     color: white;
     font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
 }
