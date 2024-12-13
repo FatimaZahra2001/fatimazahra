@@ -15,7 +15,7 @@
             <h2>Welcome to My Dreamy World</h2>
             <p>Exploring the beauty of code and design</p>
             <a href="#portfolio" class="button">View My Portfolio</a>
-            <img src="assets/icon.png" alt="Cute Cloud" class="cloud-img">
+            <img src="fatimazahra.github.io/assets/icon.png" alt="Cute Cloud" class="cloud-img">
         </div>
     </section>
 
@@ -24,45 +24,22 @@
         <h2>My Projects</h2>
         <div class="cards">
             <div class="card">
-                <img src="assets/icon.png" alt="Project 1">
+                <img src="fatimazahra.github.io/assets/icon.png" alt="Project 1">
                 <h3>Cozy Clouds</h3>
                 <p>A dreamy and animated overlay for your creative needs.</p>
             </div>
             <div class="card">
-                <img src="assets/icon.png" alt="Project 2">
+                <img src="fatimazahra.github.io/assets/icon.png" alt="Project 2">
                 <h3>ResNet for Brain MRI</h3>
                 <p>Improving anomaly detection in brain MRI scans using AI techniques.</p>
             </div>
         </div>
     </section>
 
-    <!-- Social Media Widget -->
-    <div class="social-media-widget">
-        <a href="https://www.instagram.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
-        <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
-    </div>
-
-    <!-- Clock Widget -->
-    <div class="clock-widget">
-        <p id="time"></p>
-    </div>
-
     <!-- Weather Widget -->
     <div class="weather-widget">
         <iframe src="https://forecast7.com/en/51d507d8d54f05d5d7a0712f3271d6c0/" frameborder="0" scrolling="no" width="250" height="300"></iframe>
     </div>
 
-    <script>
-        // Clock Widget Functionality
-        function updateClock() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const seconds = now.getSeconds().toString().padStart(2, '0');
-            document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
-        }
-        setInterval(updateClock, 1000);
-        updateClock(); // Initial call to set time right away
-    </script>
 </body>
 </html>
