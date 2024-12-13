@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'JetBrains Mono', monospace;
-    background-color: #0a001f; /* Very dark purple */
-    color: #d1a2ff; /* Light lavender color for text to contrast with dark purple */
+    background-color: #0a001f;
+    color: #d1a2ff;
     overflow-x: hidden;
 }
 
@@ -14,18 +14,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0a001f; /* Very dark purple */
+    background-color: #0a001f;
     position: relative;
     text-align: center;
     padding: 20px;
-    color: #d1a2ff; /* Light lavender */
+    color: #d1a2ff;
     overflow: hidden;
 }
 
 .landing-text {
     z-index: 2;
     font-size: 1.5rem;
-    max-width: 90%; /* Limit the width */
+    max-width: 90%;
 }
 
 button, .button {
@@ -35,6 +35,7 @@ button, .button {
     padding: 12px 24px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 button:hover, .button:hover {
@@ -48,7 +49,7 @@ button:hover, .button:hover {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    border-right: 4px solid #d1a2ff; /* Simulating typing cursor */
+    border-right: 4px solid #d1a2ff;
     width: 0;
     animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
@@ -62,68 +63,33 @@ button:hover, .button:hover {
     50% { border-color: transparent; }
 }
 
-/* About Me Section */
-.about {
+/* Section Styles */
+section {
     padding: 30px;
-    background-color: #2b0044; /* Slightly lighter dark purple */
-    color: #d1a2ff; /* Light lavender */
     margin: 20px auto;
-    max-width: 800px; /* Limit width */
-    border: 2px solid #7c4dff; /* Add border to sections */
-    border-radius: 10px; /* Rounded corners for sections */
+    max-width: 800px;
+    border-radius: 10px;
+    border: 2px solid #7c4dff;
 }
 
-.about h2 {
+.about, .projects {
+    background-color: #2b0044;
+}
+
+.interests {
+    background-color: #3e004d;
+}
+
+h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.about p {
+p, ul, li {
     font-size: 1.1rem;
 }
 
-/* Interests Section */
-.interests {
-    padding: 30px;
-    background-color: #3e004d; /* Dark purple with slight contrast */
-    color: #d1a2ff; /* Light lavender */
-    margin: 20px auto;
-    max-width: 800px; /* Limit width */
-    border: 2px solid #7c4dff; /* Add border to sections */
-    border-radius: 10px; /* Rounded corners for sections */
-}
-
-.interests h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.interests ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.interests li {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-/* Projects Section */
-.projects {
-    padding: 30px;
-    background-color: #2b0044; /* Slightly lighter dark purple */
-    color: #d1a2ff; /* Light lavender */
-    margin: 20px auto;
-    max-width: 800px; /* Limit width */
-    border: 2px solid #7c4dff; /* Add border to sections */
-    border-radius: 10px; /* Rounded corners for sections */
-}
-
-.projects h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
+/* Cards in Projects */
 .cards {
     display: flex;
     justify-content: center;
@@ -132,10 +98,11 @@ button:hover, .button:hover {
 }
 
 .card {
-    background-color: #7c4dff90; /* Translucent light purple */
+    background-color: #7c4dff90;
     padding: 20px;
     border-radius: 10px;
-    width: 250px; /* Reduced size for smaller sections */
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -154,7 +121,7 @@ button:hover, .button:hover {
     font-size: 1rem;
 }
 
-/* Stars effect */
+/* Stars Effect */
 .hero::after {
     content: '';
     position: absolute;
@@ -162,7 +129,7 @@ button:hover, .button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Starry background pattern */
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
     opacity: 0.2;
     pointer-events: none;
 }
@@ -173,12 +140,20 @@ button:hover, .button:hover {
         flex-direction: column;
     }
 
-    .hero h1 {
+    #name {
         font-size: 1.5rem;
     }
 
-    .about, .interests, .projects {
-        padding: 30px 10px;
-        max-width: 100%;
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, ul, li {
+        font-size: 1rem;
+    }
+
+    button, .button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
     }
 }
