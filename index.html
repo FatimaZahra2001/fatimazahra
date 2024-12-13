@@ -3,62 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fatima Zahra's Portfolio">
-    <title>Fatima Zahra's Portfolio</title>
+    <title>Dreamy Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Fatima Zahra</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Dreamy Designs</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Fatima Zahra, a passionate developer who loves creating and innovating with code.</p>
-        <img src="assets/profile.jpg" alt="Fatima Zahra" class="profile-img">
+    <section class="hero" id="home">
+        <h2>Welcome to Dreamy Designs</h2>
+        <p>Beautiful and cozy designs to brighten your day.</p>
+        <a href="#projects" class="button">View Projects</a>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: AI for Cancer Detection</h3>
-            <p>A brief description of your project here.</p>
+    <section class="section" id="projects">
+        <h2>Our Projects</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Cozy Clouds</h3>
+                <p>A dreamy and animated overlay for your creative needs.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Starry Nights</h3>
+                <p>Shimmering stars and glowing animations to inspire.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Pink Room</h3>
+                <p>Soft pink aesthetics combined with functional designs.</p>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2: Brain MRI Anomaly Detection</h3>
-            <p>A brief description of your project here.</p>
-        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Deep Learning</li>
-            <li>Web Development</li>
-        </ul>
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>We specialize in creating pastel-themed and cozy designs for streamers, creators, and dreamers.</p>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/fatimazahra">fatimazahra</a></p>
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email us at <a href="mailto:contact@dreamydesigns.com">contact@dreamydesigns.com</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Fatima Zahra</p>
+        &copy; 2024 Dreamy Designs. All rights reserved.
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
