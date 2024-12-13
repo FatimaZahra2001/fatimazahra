@@ -33,15 +33,17 @@ body {
 }
 
 /* Cat Image Styles */
-.cat-image img {
-    width: 500px; /* Make the image big */
-    height: auto;
-    max-width: 100%;
-    position: absolute;
-    right: 20px; /* Position it on the right */
-    top: 50%; /* Center it vertically */
-    transform: translateY(-50%); /* Center it properly */
+.cat-image {
+    position: absolute; /* Fix the image to the right side */
+    right: 20px; /* Position it at the far right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Ensure the image is exactly centered */
     z-index: 2; /* Keep it above other content */
+}
+
+.cat-image img {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
 }
 
 /* Typing effect for the name */
