@@ -3,11 +3,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #6b3f8c, #a26ad6); /* Darker purple to pink gradient */
+    background-color: #2f1f7a; /* Dark purple background */
     color: white;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-h2, h3, p {
+h1, h2, h3, p {
     text-align: center;
     color: #fff;
 }
@@ -16,13 +18,13 @@ a {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    background-color: #9c6ad1;
+    background-color: #7c4dff; /* Light purple for interactive buttons */
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 a:hover {
-    background-color: #c18fe0;
+    background-color: #9b66ff; /* Slightly lighter purple on hover */
 }
 
 /* Hero Section */
@@ -31,42 +33,73 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('assets/background.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background-color: #3b1d6b; /* Slightly darker shade of purple for hero */
+    text-align: center;
+    padding: 20px;
 }
 
 .landing-text {
     z-index: 2;
-    text-align: center;
 }
 
-.clouds {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    z-index: 1;
+button, .button {
+    background-color: #7c4dff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.cloud-img {
-    width: 200px;
-    margin-top: 20px;
-    animation: float 5s infinite ease-in-out;
+button:hover, .button:hover {
+    background-color: #9b66ff;
 }
 
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-/* Portfolio Section */
-.portfolio {
+/* About Me Section */
+.about {
     padding: 50px 20px;
+    background-color: #4b287d; /* A slightly lighter purple for a subtle contrast */
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+/* Interests Section */
+.interests {
+    padding: 50px 20px;
+    background-color: #5a338b; /* Darker purple for interests section */
+}
+
+.interests h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #3b1d6b; /* Keeping the darker purple tone for consistency */
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .cards {
@@ -77,56 +110,31 @@ a:hover {
 }
 
 .card {
-    background-color: #ffffff90;
+    background-color: #7c4dff90; /* Translucent light purple */
     padding: 20px;
     border-radius: 10px;
     width: 300px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
+.card:hover {
+    transform: scale(1.05);
 }
 
-/* Weather Widget */
-.weather-widget {
-    margin: 20px;
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-}
-
-/* For a Dreamy, Cozy Look, Add More Styling */
-button, .button {
-    background-color: #c18fe0;
-    color: white;
-    font-size: 1.2rem;
-    padding: 12px 24px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover, .button:hover {
-    background-color: #9c6ad1;
-}
-
-/* Global Styles for Text */
-h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.8rem;
-    color: #fff;
+.card h3 {
+    font-size: 1.5rem;
     margin-top: 10px;
 }
 
-p {
-    color: #fff;
-    font-size: 1.2rem;
+.card p {
+    font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
 }
