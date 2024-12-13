@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Hero Section */
+/* Hero Section (Top of the Page) */
 .hero {
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
     padding: 20px;
     color: #d1a2ff;
     overflow: hidden;
-    border: none; /* Removed border for Hero Section */
+    border: none; /* No border for the hero section */
 }
 
 .landing-text {
@@ -100,6 +100,10 @@ section {
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
+}
+
+/* Only Sections Below the Hero Have Borders */
+.bordered-section {
     border: 2px solid #7c4dff;
 }
 
