@@ -20,6 +20,7 @@ body {
     padding: 20px;
     color: #d1a2ff;
     overflow: hidden;
+    border: none; /* Removed border for Hero Section */
 }
 
 .landing-text {
@@ -29,19 +30,47 @@ body {
 }
 
 button, .button {
-    background-color: #7c4dff;
-    color: #d1a2ff;
+    background: linear-gradient(135deg, #7c4dff, #d1a2ff);
+    color: #fff;
     font-size: 1rem;
     padding: 12px 24px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
     border: none;
-    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(124, 77, 255, 0.6);
 }
 
 button:hover, .button:hover {
-    background-color: #9b66ff;
+    background: linear-gradient(135deg, #d1a2ff, #7c4dff);
+    box-shadow: 0 6px 20px rgba(124, 77, 255, 0.8), 0 0 10px #d1a2ff;
+    transform: translateY(-2px);
+}
+
+/* Add a celestial sparkle effect */
+button::before, .button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 10%, transparent 70%);
+    animation: sparkle 6s infinite linear;
+    opacity: 0.6;
+    pointer-events: none;
+    filter: blur(3px);
+}
+
+@keyframes sparkle {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-100%, -100%);
+    }
 }
 
 /* Typing Effect Animation */
@@ -121,26 +150,6 @@ p, ul, li {
 
 .card p {
     font-size: 1rem;
-}
-
-/* Back to Top Button */
-#backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background-color: #7c4dff;
-    color: #d1a2ff;
-    font-size: 1rem;
-    padding: 10px 15px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    z-index: 1000;
-}
-
-#backToTop:hover {
-    background-color: #9b66ff;
 }
 
 /* Stars Effect */
