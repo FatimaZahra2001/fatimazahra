@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dreamy Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Dreamy Designs</h1>
+        <h1 id="name">Fatima Zahra Al Hajji</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio" class="button">Portfolio</a></li>
+                <li><a href="#projects" class="button">Projects</a></li>
+                <li><a href="#contact" class="button">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero" id="home">
-        <h2>Welcome to Dreamy Designs</h2>
-        <p>Beautiful and cozy designs to brighten your day.</p>
-        <a href="#projects" class="button">View Projects</a>
+        <div class="clouds"></div>
+        <div class="landing-text">
+            <h2>Welcome to My Dreamy World</h2>
+            <p>Exploring the beauty of code and design</p>
+            <a href="#portfolio" class="button">View My Portfolio</a>
+        </div>
+    </section>
+
+    <section class="section" id="portfolio">
+        <h2>My Portfolio</h2>
+        <p>This is where I showcase my work. Take a look at my creative projects!</p>
     </section>
 
     <section class="section" id="projects">
-        <h2>Our Projects</h2>
+        <h2>Projects</h2>
         <div class="card-container">
             <div class="card">
                 <img src="https://via.placeholder.com/300x200" alt="Project 1">
@@ -47,18 +54,13 @@
         </div>
     </section>
 
-    <section class="section" id="about">
-        <h2>About Us</h2>
-        <p>We specialize in creating pastel-themed and cozy designs for streamers, creators, and dreamers.</p>
-    </section>
-
     <section class="section" id="contact">
         <h2>Contact</h2>
-        <p>Email us at <a href="mailto:contact@dreamydesigns.com">contact@dreamydesigns.com</a></p>
+        <p>Email me at <a href="mailto:contact@dreamydesigns.com">contact@dreamydesigns.com</a></p>
     </section>
 
     <footer>
-        &copy; 2024 Dreamy Designs. All rights reserved.
+        &copy; 2024 Fatima Zahra Al Hajji. All rights reserved.
     </footer>
 
     <script src="scripts.js"></script>
