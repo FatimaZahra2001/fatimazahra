@@ -22,6 +22,7 @@
     <section class="about" id="about">
         <h2>About Me</h2>
         <p>My name is Fatima Zahra Al Hajji, a passionate researcher and software engineer with a deep interest in AI, machine learning, and innovative technologies. I aim to combine my expertise in computer vision and AI to develop solutions that improve healthcare and make a positive impact on society.</p>
+        <a href="#contact" class="button contact-button">Contact Me</a>
     </section>
 
     <!-- Interests Section -->
@@ -51,23 +52,38 @@
         </div>
     </section>
 
-</body>
+    <!-- Back to Top Button -->
+    <button id="backToTop">↑ Back to Top</button>
 
-<script>
-    // Typing effect for the name
-    let nameElement = document.getElementById('name');
-    let nameText = 'fatima zahra al hajji';
-    let index = 0;
+    <script>
+        // Typing effect for the name
+        let nameElement = document.getElementById('name');
+        let nameText = 'fatima zahra al hajji';
+        let index = 0;
 
-    function typeName() {
-        if (index < nameText.length) {
-            nameElement.innerHTML += nameText.charAt(index);
-            index++;
-            setTimeout(typeName, 150);
+        function typeName() {
+            if (index < nameText.length) {
+                nameElement.innerHTML += nameText.charAt(index);
+                index++;
+                setTimeout(typeName, 150);
+            }
         }
-    }
 
-    window.onload = typeName;
-</script>
+        window.onload = typeName;
 
+        // Back to Top Button Functionality
+        const backToTopButton = document.getElementById('backToTop');
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        backToTopButton.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
 </html>

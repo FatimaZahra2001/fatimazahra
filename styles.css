@@ -36,6 +36,8 @@ button, .button {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 button:hover, .button:hover {
@@ -119,6 +121,26 @@ p, ul, li {
 
 .card p {
     font-size: 1rem;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #7c4dff;
+    color: #d1a2ff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #9b66ff;
 }
 
 /* Stars Effect */
